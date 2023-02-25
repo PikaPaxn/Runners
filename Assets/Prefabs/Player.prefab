@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 9184385090155886503}
   - component: {fileID: 9184385090155886505}
   - component: {fileID: 6970177909983030144}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,7 +122,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -174,7 +174,16 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   moveSpeed: 400
-  jumpForce: 10
+  jumpForce: 20
+  fallMultiplier: 1.3
+  lowJumpMultiplier: 15
+  groundCheckDistance: 0.1
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  slopeCheckDistance: 0.3
+  fullFriction: {fileID: 6200000, guid: e866daffb9cf39e42a099b88a0f959d6, type: 2}
+  noFriction: {fileID: 6200000, guid: fd7c06c500458354f9d95dfbcdf10fcf, type: 2}
   skins:
   - {fileID: 9100000, guid: 2e3730b652cc5bd42aaa2dec4f0222bb, type: 2}
   - {fileID: 22100000, guid: e6b230b75c8dd044999d8d8c29726e89, type: 2}
